@@ -2,6 +2,20 @@
 #define DEFAULT_Ki 1.76
 #define DEFAULT_Kd 68.16
 
+run 2
 
+#define DEFAULT_Kp 39.08
+#define DEFAULT_Ki 3.34
+#define DEFAULT_Kd 114.49
 
+run 3
 
+#define DEFAULT_Kp 35.39
+#define DEFAULT_Ki 2.86
+#define DEFAULT_Kd 109.43
+
+run 4
+
+#define DEFAULT_Kp 30.68
+#define DEFAULT_Ki 2.39
+#define DEFAULT_Kd 98.66
