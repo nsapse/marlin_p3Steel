@@ -488,9 +488,7 @@
 
   // Ultimaker
   
-#define DEFAULT_Kp 30.68
-#define DEFAULT_Ki 2.39
-#define DEFAULT_Kd 98.66
+// /
 
   // MakerGear
   //#define DEFAULT_Kp 7.0
@@ -501,6 +499,12 @@
   //#define DEFAULT_Kp 63.0
   //#define DEFAULT_Ki 2.25
   //#define DEFAULT_Kd 440
+
+
+  // Custom E6v3 Tune 10.11.20 Nsapse
+  #define DEFAULT_Kp 32.48
+  #define DEFAULT_Ki 2.64
+  #define DEFAULT_Kd 99.79
 
 #endif // PIDTEMP
 
@@ -542,9 +546,14 @@
 
 
   // PID tuned by Noah Sapse 9.30.20
-  #define DEFAULT_bedKp 69.90
-  #define DEFAULT_bedKi 5.30
-  #define DEFAULT_bedKd 614.58
+  // #define DEFAULT_bedKp 69.90
+  // #define DEFAULT_bedKi 5.30
+  // #define DEFAULT_bedKd 614.58
+
+  // Retune 10.11.20
+  #define DEFAULT_bedKp 141.07
+#define DEFAULT_bedKi 14.35
+#define DEFAULT_bedKd 924.52
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -963,7 +972,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 30, 30, -.75 }
+#define NOZZLE_TO_PROBE_OFFSET { 30, 30, -.445}
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1449,7 +1458,7 @@
  *   M501 - Read settings from EEPROM. (i.e., Throw away unsaved changes)
  *   M502 - Revert settings to "factory" defaults. (Follow with M500 to init the EEPROM.)
  */
-#define EEPROM_SETTINGS     // Persistent storage with M500 and M501
+// #define EEPROM_SETTINGS     // Persistent storage with M500 and M501
 //#define DISABLE_M503        // Saves ~2700 bytes of PROGMEM. Disable for release!
 #define EEPROM_CHITCHAT       // Give feedback on EEPROM commands. Disable to save PROGMEM.
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
