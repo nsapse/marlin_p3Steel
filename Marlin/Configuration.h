@@ -550,10 +550,9 @@
   // #define DEFAULT_bedKi 5.30
   // #define DEFAULT_bedKd 614.58
 
-  // Retune 10.11.20
-  #define DEFAULT_bedKp 141.07
-#define DEFAULT_bedKi 14.35
-#define DEFAULT_bedKd 924.52
+  #define DEFAULT_bedKp 147.54
+#define DEFAULT_bedKi 14.64
+#define DEFAULT_bedKd 991.08
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
